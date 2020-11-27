@@ -1,4 +1,4 @@
-package com.hiddenramblings.tagmo;
+package com.shiningwing.tagmo;
 
 import android.app.Activity;
 import android.app.SearchManager;
@@ -24,12 +24,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.hiddenramblings.tagmo.amiibo.Amiibo;
-import com.hiddenramblings.tagmo.amiibo.AmiiboManager;
-import com.hiddenramblings.tagmo.amiibo.AmiiboSeries;
-import com.hiddenramblings.tagmo.amiibo.AmiiboType;
-import com.hiddenramblings.tagmo.amiibo.Character;
-import com.hiddenramblings.tagmo.amiibo.GameSeries;
+import com.shiningwing.tagmo.amiibo.Amiibo;
+import com.shiningwing.tagmo.amiibo.AmiiboManager;
+import com.shiningwing.tagmo.amiibo.AmiiboSeries;
+import com.shiningwing.tagmo.amiibo.AmiiboType;
+import com.shiningwing.tagmo.amiibo.Character;
+import com.shiningwing.tagmo.amiibo.GameSeries;
 import com.robertlevonyan.views.chip.Chip;
 import com.robertlevonyan.views.chip.OnCloseClickListener;
 

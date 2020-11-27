@@ -1,4 +1,4 @@
-package com.hiddenramblings.tagmo;
+package com.shiningwing.tagmo;
 
 import android.content.DialogInterface;
 import android.graphics.Bitmap;
@@ -15,8 +15,8 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.SimpleTarget;
 import com.bumptech.glide.request.transition.Transition;
-import com.hiddenramblings.tagmo.amiibo.Amiibo;
-import com.hiddenramblings.tagmo.amiibo.AmiiboManager;
+import com.shiningwing.tagmo.amiibo.Amiibo;
+import com.shiningwing.tagmo.amiibo.AmiiboManager;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Background;

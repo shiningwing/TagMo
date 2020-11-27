@@ -1,4 +1,4 @@
-package com.hiddenramblings.tagmo;
+package com.shiningwing.tagmo;
 
 import android.app.Activity;
 import android.content.DialogInterface;
@@ -10,7 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import com.hiddenramblings.tagmo.amiibo.AmiiboSeries;
+import com.shiningwing.tagmo.amiibo.AmiiboSeries;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;

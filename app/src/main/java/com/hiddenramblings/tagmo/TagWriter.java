@@ -1,8 +1,8 @@
-package com.hiddenramblings.tagmo;
+package com.shiningwing.tagmo;
 
 import android.util.Log;
 
-import com.hiddenramblings.tagmo.ptag.PTagKeyManager;
+import com.shiningwing.tagmo.ptag.PTagKeyManager;
 
 import java.io.IOException;
 

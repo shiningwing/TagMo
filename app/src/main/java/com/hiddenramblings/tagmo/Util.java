@@ -1,4 +1,4 @@
-package com.hiddenramblings.tagmo;
+package com.shiningwing.tagmo;
 
 import android.content.Context;
 import android.content.res.AssetManager;
@@ -6,7 +6,7 @@ import android.os.Build;
 import android.os.Environment;
 import android.util.Log;
 
-import com.hiddenramblings.tagmo.amiibo.AmiiboManager;
+import com.shiningwing.tagmo.amiibo.AmiiboManager;
 
 import org.json.JSONException;
 

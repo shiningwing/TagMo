@@ -1,4 +1,4 @@
-package com.hiddenramblings.tagmo;
+package com.shiningwing.tagmo;
 
 import android.graphics.Color;
 import android.graphics.Typeface;

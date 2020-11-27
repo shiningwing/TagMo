@@ -1,4 +1,4 @@
-package com.hiddenramblings.tagmo;
+package com.shiningwing.tagmo;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -21,12 +21,12 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.bumptech.glide.request.target.SimpleTarget;
 import com.bumptech.glide.request.transition.Transition;
-import com.hiddenramblings.tagmo.amiibo.Amiibo;
-import com.hiddenramblings.tagmo.amiibo.AmiiboManager;
-import com.hiddenramblings.tagmo.amiibo.AmiiboSeries;
-import com.hiddenramblings.tagmo.amiibo.AmiiboType;
-import com.hiddenramblings.tagmo.amiibo.Character;
-import com.hiddenramblings.tagmo.amiibo.GameSeries;
+import com.shiningwing.tagmo.amiibo.Amiibo;
+import com.shiningwing.tagmo.amiibo.AmiiboManager;
+import com.shiningwing.tagmo.amiibo.AmiiboSeries;
+import com.shiningwing.tagmo.amiibo.AmiiboType;
+import com.shiningwing.tagmo.amiibo.Character;
+import com.shiningwing.tagmo.amiibo.GameSeries;
 
 import java.io.File;
 import java.util.ArrayList;

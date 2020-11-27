@@ -1,12 +1,12 @@
-package com.hiddenramblings.tagmo.ptag;
+package com.shiningwing.tagmo.ptag;
 
 import android.content.Context;
 import android.content.res.AssetManager;
 import android.util.Base64;
 import android.util.Log;
 
-import com.hiddenramblings.tagmo.Util;
-import com.hiddenramblings.tagmo.amiibo.AmiiboManager;
+import com.shiningwing.tagmo.Util;
+import com.shiningwing.tagmo.amiibo.AmiiboManager;
 
 import org.json.JSONException;
 import org.json.JSONObject;

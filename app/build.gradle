@@ -5,10 +5,10 @@ android {
     buildToolsVersion '29.0.2'
 
     defaultConfig {
-        applicationId "com.hiddenramblings.tagmo"
+        applicationId 'com.shiningwing.tagmo'
         minSdkVersion 21
         targetSdkVersion 26
-        versionCode 5
+        versionCode 6
         versionName "2.7.0"
     }
 

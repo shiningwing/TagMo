@@ -1,4 +1,4 @@
-package com.hiddenramblings.tagmo;
+package com.shiningwing.tagmo;
 
 import android.nfc.Tag;
 import android.nfc.tech.MifareUltralight;

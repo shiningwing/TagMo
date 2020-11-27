@@ -1,9 +1,9 @@
-package com.hiddenramblings.tagmo;
+package com.shiningwing.tagmo;
 
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import com.hiddenramblings.tagmo.amiibo.AmiiboManager;
+import com.shiningwing.tagmo.amiibo.AmiiboManager;
 
 import java.io.File;
 import java.util.ArrayList;

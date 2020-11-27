@@ -1,4 +1,4 @@
-package com.hiddenramblings.tagmo.amiibo;
+package com.shiningwing.tagmo.amiibo;
 
 import java.util.Date;
 

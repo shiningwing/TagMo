@@ -1,4 +1,4 @@
-package com.hiddenramblings.tagmo;
+package com.shiningwing.tagmo;
 
 import java.io.InputStream;
 import java.nio.ByteBuffer;

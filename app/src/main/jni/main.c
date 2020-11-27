@@ -12,7 +12,7 @@
 
 static nfc3d_amiibo_keys keys;
 
-JNIEXPORT jint Java_com_hiddenramblings_tagmo_AmiiTool_setKeysUnfixed(JNIEnv * env, jobject this, jbyteArray keydata, jint dataLength) {
+JNIEXPORT jint Java_com_shiningwing_tagmo_AmiiTool_setKeysUnfixed(JNIEnv * env, jobject this, jbyteArray keydata, jint dataLength) {
 	if (sizeof(keys.data) != dataLength)
 		return 0;
 	
@@ -20,7 +20,7 @@ JNIEXPORT jint Java_com_hiddenramblings_tagmo_AmiiTool_setKeysUnfixed(JNIEnv * e
 	return 1;
 }
 
-JNIEXPORT jint Java_com_hiddenramblings_tagmo_AmiiTool_setKeysFixed(JNIEnv * env, jobject this, jbyteArray keydata, jint dataLength) {
+JNIEXPORT jint Java_com_shiningwing_tagmo_AmiiTool_setKeysFixed(JNIEnv * env, jobject this, jbyteArray keydata, jint dataLength) {
 	if (sizeof(keys.tag) != dataLength)
 		return 0;
 	
@@ -28,7 +28,7 @@ JNIEXPORT jint Java_com_hiddenramblings_tagmo_AmiiTool_setKeysFixed(JNIEnv * env
 	return 1;
 }
 
-JNIEXPORT jint Java_com_hiddenramblings_tagmo_AmiiTool_unpack(JNIEnv * env, jobject this, jbyteArray tag, jint dataLength, jbyteArray returnData, jint returnDataLength) {
+JNIEXPORT jint Java_com_shiningwing_tagmo_AmiiTool_unpack(JNIEnv * env, jobject this, jbyteArray tag, jint dataLength, jbyteArray returnData, jint returnDataLength) {
 	
 	if (dataLength< NFC3D_AMIIBO_SIZE || returnDataLength< NFC3D_AMIIBO_SIZE || dataLength != returnDataLength)
 		return 0;
@@ -49,7 +49,7 @@ JNIEXPORT jint Java_com_hiddenramblings_tagmo_AmiiTool_unpack(JNIEnv * env, jobj
 	return 1;
 }
 
-JNIEXPORT jint Java_com_hiddenramblings_tagmo_AmiiTool_pack(JNIEnv * env, jobject this, jbyteArray tag, jint dataLength, jbyteArray returnData, jint returnDataLength) {
+JNIEXPORT jint Java_com_shiningwing_tagmo_AmiiTool_pack(JNIEnv * env, jobject this, jbyteArray tag, jint dataLength, jbyteArray returnData, jint returnDataLength) {
 	
 	if (dataLength< NFC3D_AMIIBO_SIZE || returnDataLength< NFC3D_AMIIBO_SIZE || dataLength != returnDataLength)
 		return 0;

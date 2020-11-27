@@ -1,4 +1,4 @@
-package com.hiddenramblings.tagmo;
+package com.shiningwing.tagmo;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -38,10 +38,10 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.bumptech.glide.request.target.SimpleTarget;
 import com.bumptech.glide.request.transition.Transition;
-import com.hiddenramblings.tagmo.amiibo.Amiibo;
-import com.hiddenramblings.tagmo.amiibo.AmiiboManager;
+import com.shiningwing.tagmo.amiibo.Amiibo;
+import com.shiningwing.tagmo.amiibo.AmiiboManager;
 
-import com.hiddenramblings.tagmo.ptag.PTagKeyManager;
+import com.shiningwing.tagmo.ptag.PTagKeyManager;
 
 
 import org.androidannotations.annotations.AfterViews;

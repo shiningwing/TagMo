@@ -1,4 +1,4 @@
-package com.hiddenramblings.tagmo;
+package com.shiningwing.tagmo;
 
 import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;

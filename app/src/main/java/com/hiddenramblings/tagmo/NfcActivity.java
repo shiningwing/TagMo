@@ -1,4 +1,4 @@
-package com.hiddenramblings.tagmo;
+package com.shiningwing.tagmo;
 
 import android.app.Activity;
 import android.app.PendingIntent;
@@ -33,15 +33,15 @@ import org.androidannotations.annotations.sharedpreferences.Pref;
 public class NfcActivity extends AppCompatActivity {
     private static final String TAG = "NfcActivity";
 
-    public static final String ACTION_SCAN_TAG = "com.hiddenramblings.tagmo.SCAN_TAG";
-    public static final String ACTION_WRITE_TAG_FULL = "com.hiddenramblings.tagmo.WRITE_TAG_FULL";
-    public static final String ACTION_WRITE_TAG_RAW = "com.hiddenramblings.tagmo.WRITE_TAG_RAW";
-    public static final String ACTION_WRITE_TAG_DATA = "com.hiddenramblings.tagmo.WRITE_TAG_DATA";
+    public static final String ACTION_SCAN_TAG = "com.shiningwing.tagmo.SCAN_TAG";
+    public static final String ACTION_WRITE_TAG_FULL = "com.shiningwing.tagmo.WRITE_TAG_FULL";
+    public static final String ACTION_WRITE_TAG_RAW = "com.shiningwing.tagmo.WRITE_TAG_RAW";
+    public static final String ACTION_WRITE_TAG_DATA = "com.shiningwing.tagmo.WRITE_TAG_DATA";
 
-    public static final String ACTION_NFC_SCANNED = "com.hiddenramblings.tagmo.NFC_SCANNED";
+    public static final String ACTION_NFC_SCANNED = "com.shiningwing.tagmo.NFC_SCANNED";
 
-    public static final String EXTRA_TAG_DATA = "com.hiddenramblings.tagmo.EXTRA_TAG_DATA";
-    public static final String EXTRA_IGNORE_TAG_ID = "com.hiddenramblings.tagmo.EXTRA_IGNORE_TAG_ID";
+    public static final String EXTRA_TAG_DATA = "com.shiningwing.tagmo.EXTRA_TAG_DATA";
+    public static final String EXTRA_IGNORE_TAG_ID = "com.shiningwing.tagmo.EXTRA_IGNORE_TAG_ID";
 
     @ViewById(R.id.txtMessage)
     TextView txtMessage;

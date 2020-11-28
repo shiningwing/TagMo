@@ -35,7 +35,8 @@
             android:defaultValue="true"
             android:key="@string/settings_enable_tag_type_validation"
             android:summary="@string/settings_text_enable_tag_type_validation_description"
-            android:title="@string/settings_text_enable_tag_type_validation"/>
+            android:title="@string/settings_text_enable_tag_type_validation"
+            android:icon="@drawable/ic_outline_sticker_check_24"/>
     </androidx.preference.PreferenceCategory>
     <androidx.preference.PreferenceCategory android:title="@string/settings_text_powertag">
         <androidx.preference.CheckBoxPreference
@@ -48,7 +49,6 @@
         android:title="@string/amiibo_info">
         <androidx.preference.Preference
             android:key="@string/settings_import_info_amiiboapi"
-            android:summary="@string/setting_text_sync_info_amiiboapi_description"
             android:title="@string/setting_text_sync_info_amiiboapi"
             android:icon="@drawable/ic_baseline_sync_24"/>
         <androidx.preference.Preference

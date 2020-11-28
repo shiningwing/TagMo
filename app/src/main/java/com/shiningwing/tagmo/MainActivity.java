@@ -505,7 +505,7 @@ public class MainActivity extends AppCompatActivity {
         final String amiiboImageUrl;
 
         if (this.currentTagData == null) {
-            tagInfo = "<No Tag Loaded>";
+            tagInfo = getString(R.string.no_tag_loaded);
             amiiboImageUrl = null;
         } else {
             long amiiboId;
@@ -516,10 +516,10 @@ public class MainActivity extends AppCompatActivity {
                 amiiboId = -1;
             }
             if (amiiboId == -1) {
-                tagInfo = "<Error Reading Tag>";
+                tagInfo = getString(R.string.error_reading_tag);
                 amiiboImageUrl = null;
             } else if (amiiboId == 0) {
-                tagInfo = "<Blank Tag>";
+                tagInfo = getString(R.string.blank_tag);
                 amiiboImageUrl = null;
             } else {
                 Amiibo amiibo = null;
@@ -542,7 +542,7 @@ public class MainActivity extends AppCompatActivity {
                     if (amiibo.getCharacter() != null)
                         character = amiibo.getCharacter().name;
                 } else {
-                    tagInfo = "ID: " + TagUtil.amiiboIdToHex(amiiboId);
+                    tagInfo = getString(R.string.id_tag) + TagUtil.amiiboIdToHex(amiiboId);
                     amiiboImageUrl = Amiibo.getImageUrl(amiiboId);
                 }
             }
@@ -578,7 +578,7 @@ public class MainActivity extends AppCompatActivity {
         } else {
             textView.setVisibility(View.VISIBLE);
             if (text.length() == 0) {
-                textView.setText("Unknown");
+                textView.setText(R.string.text_unknown);
                 textView.setEnabled(false);
             } else {
                 textView.setText(text);
@@ -607,7 +607,7 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(this, BrowserActivity_.class);
             startActivityForResult(intent, FILE_LOAD_TAG);
         } else {
-            showFileChooser("Load encrypted tag file for writing", "*/*", FILE_LOAD_TAG);
+            showFileChooser(getString(R.string.load_encrypted_tag), "*/*", FILE_LOAD_TAG);
         }
     }
 
@@ -708,8 +708,8 @@ public class MainActivity extends AppCompatActivity {
             this.startActivityForResult(intent, resultCode);
         } else {
             new AlertDialog.Builder(this)
-                .setMessage("Barcode Scanner is required to use QR Codes. Would you like to install it from the Play Store?")
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                .setMessage(R.string.message_barcode_scanner_not_installed)
+                .setPositiveButton(R.string.button_yes, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         Uri marketUri = Uri.parse("market://details?id=com.google.zxing.client.android");
@@ -717,7 +717,7 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(marketIntent);
                     }
                 })
-                .setNegativeButton("No", null)
+                .setNegativeButton(R.string.button_no, null)
                 .show();
         }
     }
@@ -886,7 +886,7 @@ public class MainActivity extends AppCompatActivity {
     void loadTagFile(Uri uri) {
         try {
             this.currentTagData = TagUtil.readTag(getContentResolver().openInputStream(uri));
-            showToast("Loaded tag file.");
+            showToast(getString(R.string.loaded_tag_file));
         } catch (Exception e) {
             LogError("Error: " + e.getMessage());
         }
@@ -977,25 +977,25 @@ public class MainActivity extends AppCompatActivity {
     void LogMessage(String msg) {
         new AlertDialog.Builder(this)
             .setMessage(msg)
-            .setPositiveButton("Close", null)
+            .setPositiveButton(R.string.button_close, null)
             .show();
     }
 
     @UiThread
     void LogError(String msg, Throwable e) {
         new AlertDialog.Builder(this)
-            .setTitle("Error")
+            .setTitle(R.string.title_error)
             .setMessage(msg)
-            .setPositiveButton("Close", null)
+            .setPositiveButton(R.string.button_close, null)
             .show();
     }
 
     @UiThread
     void LogError(String msg) {
         new AlertDialog.Builder(this)
-            .setTitle("Error")
+            .setTitle(R.string.title_error)
             .setMessage(msg)
-            .setPositiveButton("Close", null)
+            .setPositiveButton(R.string.button_close, null)
             .show();
     }
 }

@@ -1,3 +1,5 @@
+![](https://i.imgur.com/h5WRBOu.png)
+
 ### This is Shining Wing's personal fork of TagMo. Stability is not guaranteed. Build at your own risk.
 
 Current changes:

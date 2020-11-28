@@ -11,6 +11,9 @@ Current changes:
 * Attempted RTL layout fixes
 * App bar titles added, as well as up arrows
 * Mildly redesigned file browser
+* Dark theme compatibility
+
+I'm a UI designer first and foremost, so don't expect many changes that aren't UI-related, I'm not even very good at programming.
 
 # What is TagMo?
 
@@ -56,7 +59,7 @@ TagMo is an Android app which allows for cloning Amiibos using blank NTAG215 NFC
 # Credits
 This app is a result of work by many others. Thanks go out to (In alphabetical order):
 
-* \_Tim\_ - The originial idea
+* \_Tim\_ - The original idea
 * 1RedOne - support/readme
 * azsde - Bug fixes/maintenance
 * Bombastisch - support and motivation
@@ -70,6 +73,7 @@ This app is a result of work by many others. Thanks go out to (In alphabetical o
 * North101 - File browser, Extended amiibo info, QR Code, general cleanup
 * masterchan-777 - Bug fixes/maintenance
 * possi - Wolf link editor
+* Shining Wing - The changes listed above
 * socram8888 - Decryotion encryption code
 * Supercool330 - Encryption algo help
 * Others who preferred to remain anonymous.

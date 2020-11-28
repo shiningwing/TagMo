@@ -22,7 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="NAME"
-            android:textColor="@color/tag_text"
+            android:textColor="?attr/colorOnSurface"
             android:textSize="16sp"/>
 
         <LinearLayout
@@ -39,7 +39,7 @@
                 android:layout_weight="1"
                 android:gravity="start"
                 android:text="TAGID"
-                android:textColor="@color/tag_text"
+                android:textColor="?attr/colorOnSurface"
                 android:textSize="12sp"/>
 
             <View
@@ -53,7 +53,7 @@
                 android:layout_weight="1"
                 android:gravity="end"
                 android:text="AMIIBO TYPE"
-                android:textColor="@color/tag_text"
+                android:textColor="?attr/colorOnSurface"
                 android:textSize="12sp"/>
         </LinearLayout>
 
@@ -71,7 +71,7 @@
                 android:layout_weight="1"
                 android:gravity="start"
                 android:text="GAME SERIES"
-                android:textColor="@color/tag_text"
+                android:textColor="?attr/colorOnSurface"
                 android:textSize="12sp"/>
 
             <View
@@ -85,7 +85,7 @@
                 android:layout_weight="1"
                 android:gravity="end"
                 android:text="AMIIBO SERIES"
-                android:textColor="@color/tag_text"
+                android:textColor="?attr/colorOnSurface"
                 android:textSize="12sp"/>
         </LinearLayout>
 
@@ -105,7 +105,7 @@
         android:layout_height="wrap_content"
         android:gravity="end"
         android:text="CHARACTER"
-        android:textColor="@color/tag_text"
+        android:textColor="?attr/colorOnSurface"
         android:textSize="12sp"
         android:visibility="gone"/>
 

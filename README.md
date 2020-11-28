@@ -1,5 +1,12 @@
-# TagMo's development is currently stagnant. If you want to contribute, please make sure to adress your PRs to the 'master2' branch, in order to keep it seperate from the original master. TagMo itself still works in it's current state. Thank you.
+### This is Shining Wing's personal fork of TagMo. Stability is not guaranteed. Build at your own risk.
 
+Current changes:
+* New launcher icon
+* Icons added to settings
+* Bitmap icons replaced with vector icons
+* Most hardcoded text converted to strings
+* Layout and accessibility improvements
+* App bar titles added, as well as up arrows
 
 # What is TagMo?
 

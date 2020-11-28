@@ -24,8 +24,9 @@
             android:layout_height="60dp"
             android:layout_gravity="center_vertical"
             android:layout_marginRight="8dp"
+            android:contentDescription="@string/amiibo_image"
             android:foreground="@drawable/card_foreground"
-            android:visibility="gone"/>
+            android:visibility="gone" />
 
         <RelativeLayout
             android:layout_width="0dp"

@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.shiningwing.tagmo">
 
-    <uses-permission android:name="android.permission.BIND_NFC_SERVICE"/>
+    <!--<uses-permission android:name="android.permission.BIND_NFC_SERVICE"/>-->
     <uses-permission android:name="android.permission.NFC"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
@@ -25,23 +25,37 @@
         </activity>
         <activity
             android:name=".NfcActivity_"
-            android:launchMode="singleTop"/>
-        <activity android:name=".EditorSSB_"/>
-        <activity android:name=".EditorTP_"/>
-        <activity android:name=".HexViewerActivity_"/>
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity_"/>
+        <activity
+            android:name=".EditorSSB_"
+            android:label="@string/title_editor_ssb"/>
+        <activity
+            android:name=".EditorTP_"
+            android:label="@string/title_editor_tp"/>
+        <activity
+            android:name=".HexViewerActivity_"
+            android:parentActivityName=".MainActivity_"
+            android:label="@string/title_hex_viewer"/>
         <activity
             android:name=".BrowserActivity_"
-            android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".MainActivity_"
+            android:label="@string/title_file_browser">
             <meta-data
                 android:name="android.app.searchable"
                 android:resource="@xml/searchable"/>
         </activity>
         <activity
             android:name=".ImageActivity_"
-            android:theme="@style/AppTheme"/>
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".MainActivity_"
+            android:label="@string/title_view_image"/>
         <activity
             android:name=".SettingsActivity_"
-            android:theme="@style/AppTheme"/>
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".MainActivity_"
+            android:label="@string/title_settings"/>
     </application>
 
 </manifest>

@@ -35,7 +35,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:clipToPadding="false"
-                android:paddingBottom="40dp"
+                android:paddingBottom="48dp"
                 android:scrollbars="vertical"/>
         </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
     </RelativeLayout>
@@ -45,9 +45,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:paddingBottom="40dp"
-        android:text="No Amiibos Found"
-        android:textAppearance="?android:attr/textAppearanceLarge"/>
+        android:text="@string/no_amiibos_found"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <LinearLayout
         android:id="@+id/bottom_sheet"
@@ -56,16 +55,17 @@
         android:background="#A9333333"
         android:clickable="true"
         android:orientation="vertical"
-        app:behavior_peekHeight="40dp"
-        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+        app:behavior_peekHeight="48dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+        android:focusable="true">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
             android:orientation="horizontal">
 
             <ImageView
@@ -73,8 +73,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginRight="4dp"
-                android:src="@drawable/ic_folder_open_white_24dp"/>
+                android:paddingEnd="32dp"
+                android:paddingStart="@dimen/activity_horizontal_margin"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:src="@drawable/ic_baseline_folder_open_24"/>
 
             <TextView
                 android:id="@+id/current_folder"
@@ -85,14 +88,21 @@
                 android:singleLine="true"
                 android:ellipsize="middle"
                 android:textColor="@android:color/white"
-                android:textSize="16dp"/>
+                android:textSize="16sp"/>
 
             <ImageView
                 android:id="@+id/toggle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:src="@drawable/ic_expand_less_white_24dp"/>
+                android:clickable="true"
+                android:contentDescription="@string/toggle_file_browser"
+                android:focusable="true"
+                android:paddingStart="32dp"
+                android:paddingTop="12dp"
+                android:paddingEnd="@dimen/activity_horizontal_margin"
+                android:paddingBottom="12dp"
+                android:src="@drawable/ic_baseline_expand_less_24" />
         </LinearLayout>
 
         <androidx.recyclerview.widget.RecyclerView

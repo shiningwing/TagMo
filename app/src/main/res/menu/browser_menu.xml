@@ -3,19 +3,19 @@
       xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/search"
-        android:icon="@drawable/ic_search_white_24dp"
-        android:title="Search"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="@string/menu_search"
         app:actionViewClass="androidx.appcompat.widget.SearchView"
         app:showAsAction="collapseActionView|always"/>
     <item
         android:id="@+id/filter"
-        android:icon="@drawable/ic_filter_list_white_24dp"
-        android:title="Filter"
+        android:icon="@drawable/ic_baseline_filter_list_24"
+        android:title="@string/menu_filter"
         app:showAsAction="ifRoom">
         <menu>
             <item
                 android:id="@+id/filter_game_series"
-                android:title="Game Series">
+                android:title="@string/menu_game_series">
                 <menu>
                     <group
                         android:id="@+id/filter_game_series_group"
@@ -24,7 +24,7 @@
             </item>
             <item
                 android:id="@+id/filter_character"
-                android:title="Character">
+                android:title="@string/menu_character">
                 <menu>
                     <group
                         android:id="@+id/filter_character_group"
@@ -33,7 +33,7 @@
             </item>
             <item
                 android:id="@+id/filter_amiibo_series"
-                android:title="Amiibo Series">
+                android:title="@string/menu_amiibo_series">
                 <menu>
                     <group
                         android:id="@+id/filter_amiibo_series_group"
@@ -42,7 +42,7 @@
             </item>
             <item
                 android:id="@+id/filter_amiibo_type"
-                android:title="Amiibo Type">
+                android:title="@string/menu_amiibo_type">
                 <menu>
                     <group
                         android:id="@+id/filter_amiibo_type_group"
@@ -53,62 +53,62 @@
     </item>
     <item
         android:id="@+id/sort"
-        android:icon="@drawable/ic_sort_white_24dp"
-        android:title="Sort"
+        android:icon="@drawable/ic_baseline_sort_24"
+        android:title="@string/menu_sort"
         app:showAsAction="ifRoom">
         <menu>
             <group android:checkableBehavior="single">
                 <item
                     android:id="@+id/sort_id"
-                    android:title="ID"/>
+                    android:title="@string/menu_id"/>
                 <item
                     android:id="@+id/sort_name"
-                    android:title="Name"/>
+                    android:title="@string/menu_name"/>
                 <item
                     android:id="@+id/sort_game_series"
-                    android:title="Game Series"/>
+                    android:title="@string/menu_game_series"/>
                 <item
                     android:id="@+id/sort_character"
-                    android:title="Character"/>
+                    android:title="@string/menu_character"/>
                 <item
                     android:id="@+id/sort_amiibo_series"
-                    android:title="Amiibo Series"/>
+                    android:title="@string/menu_amiibo_series"/>
                 <item
                     android:id="@+id/sort_amiibo_type"
-                    android:title="Amiibo Type"/>
+                    android:title="@string/menu_amiibo_type"/>
                 <item
                     android:id="@+id/sort_file_path"
-                    android:title="File Path"/>
+                    android:title="@string/menu_file_path"/>
             </group>
         </menu>
     </item>
     <item
         android:id="@+id/view"
-        android:icon="@drawable/ic_view_array_white_24dp"
-        android:title="Change View"
+        android:icon="@drawable/ic_baseline_view_array_24"
+        android:title="@string/menu_change_view"
         app:showAsAction="ifRoom">
         <menu>
             <group android:checkableBehavior="single">
                 <item
                     android:id="@+id/view_simple"
-                    android:title="Simple"/>
+                    android:title="@string/menu_simple"/>
                 <item
                     android:id="@+id/view_compact"
-                    android:title="Compact"/>
+                    android:title="@string/menu_compact"/>
                 <item
                     android:id="@+id/view_large"
-                    android:title="Large"/>
+                    android:title="@string/menu_large"/>
             </group>
         </menu>
     </item>
     <item
         android:id="@+id/recursive_files"
-        android:title="Find Files Recursively"
+        android:title="@string/menu_find_files_recursively"
         app:showAsAction="ifRoom"
         android:checkable="true"/>
     <item
         android:id="@+id/refresh"
-        android:icon="@drawable/ic_refresh_white_24dp"
-        android:title="Refresh"
+        android:icon="@drawable/ic_baseline_refresh_24"
+        android:title="@string/menu_refresh"
         app:showAsAction="ifRoom"/>
 </menu>

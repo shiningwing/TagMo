@@ -8,8 +8,8 @@ android {
         applicationId 'com.shiningwing.tagmo'
         minSdkVersion 21
         targetSdkVersion 26
-        versionCode 6
-        versionName "2.7.0"
+        versionCode 7
+        versionName '2.8.0'
     }
 
     buildTypes {

@@ -4,26 +4,31 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:foreground="@drawable/card_foreground"
-    android:orientation="horizontal"
-    android:paddingBottom="8dp"
+    android:orientation="horizontal">
+    <!--android:paddingBottom="8dp"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
-    android:paddingTop="8dp">
+    android:paddingTop="8dp"-->
 
     <ImageView
         android:id="@+id/icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="4dp"
         android:layout_gravity="center"
-        android:src="@drawable/ic_arrow_upward_white_24dp"/>
+        android:contentDescription="@string/icon_up_arrow"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:paddingTop="12dp"
+        android:paddingEnd="32dp"
+        android:paddingBottom="12dp"
+        android:src="@drawable/ic_baseline_arrow_upward_24" />
 
     <TextView
         android:id="@+id/text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Parent"
+        android:text="@string/folder_parent"
         android:textColor="@android:color/white"
         android:layout_gravity="center_vertical"
-        android:textSize="16dp"/>
+        android:textSize="16sp"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"/>
 </LinearLayout>

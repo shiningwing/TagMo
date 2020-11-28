@@ -26,7 +26,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin">
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:clipToPadding="false">
 
                 <Button
                     android:id="@+id/btnLoadTag"
@@ -116,14 +117,15 @@
 
                 <CheckBox
                     android:id="@+id/cbAutoSaveOnScan"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/btnScanQRCode"
-                    android:text="@string/checkbox_auto_save_scanned_tags"/>
+                    android:layout_marginTop="16dp"
+                    android:text="@string/checkbox_auto_save_scanned_tags" />
 
                 <CheckBox
                     android:id="@+id/cbNoIDValidate"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/cbAutoSaveOnScan"
                     android:layout_toRightOf="@+id/btnCreateTag"

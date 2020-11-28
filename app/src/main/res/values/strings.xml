@@ -32,7 +32,7 @@
     <string name="keys_missing_warning">Amiibo keys not found</string>
     <string name="nfc_enable_action">Enable</string>
     <string name="open_settings_action">Settings</string>
-    <string name="edit_ssb_data">Edit SSB data</string>
+    <string name="edit_ssb_data">Edit SSB4 data</string>
     <string name="edit_mii_data">Edit Mii data</string>
     <string name="image_network_settings">\@string/image_network_settings</string>
     <string name="no_amiibos_found">No amiibos found</string>

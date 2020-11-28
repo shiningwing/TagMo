@@ -524,7 +524,7 @@ class BrowserAmiibosAdapter extends RecyclerView.Adapter<BrowserAmiibosAdapter.A
         public SimpleViewHolder(ViewGroup parent, BrowserSettings settings, OnAmiiboClickListener listener) {
             super(
                 LayoutInflater.from(parent.getContext())
-                    .inflate(R.layout.amiibo_simple_card, parent, false),
+                    .inflate(R.layout.amiibo_simple_card_browser, parent, false),
                 settings,
                 listener
             );
@@ -535,7 +535,7 @@ class BrowserAmiibosAdapter extends RecyclerView.Adapter<BrowserAmiibosAdapter.A
         public CompactViewHolder(ViewGroup parent, BrowserSettings settings, OnAmiiboClickListener listener) {
             super(
                 LayoutInflater.from(parent.getContext())
-                    .inflate(R.layout.amiibo_compact_card, parent, false),
+                    .inflate(R.layout.amiibo_compact_card_browser, parent, false),
                 settings,
                 listener
             );
@@ -546,7 +546,7 @@ class BrowserAmiibosAdapter extends RecyclerView.Adapter<BrowserAmiibosAdapter.A
         public LargeViewHolder(ViewGroup parent, BrowserSettings settings, OnAmiiboClickListener listener) {
             super(
                 LayoutInflater.from(parent.getContext())
-                    .inflate(R.layout.amiibo_large_card, parent, false),
+                    .inflate(R.layout.amiibo_large_card_browser, parent, false),
                 settings,
                 listener
             );

@@ -8,7 +8,9 @@ Current changes:
 * Bitmap icons replaced with vector icons
 * Most hardcoded text converted to strings
 * Layout and accessibility improvements
+* Attempted RTL layout fixes
 * App bar titles added, as well as up arrows
+* Mildly redesigned file browser
 
 # What is TagMo?
 

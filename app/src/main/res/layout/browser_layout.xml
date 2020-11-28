@@ -35,7 +35,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:clipToPadding="false"
-                android:paddingBottom="48dp"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="64dp"
                 android:scrollbars="vertical"/>
         </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
     </RelativeLayout>

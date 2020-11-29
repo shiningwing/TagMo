@@ -25,7 +25,7 @@
             android:layout_marginEnd="8dp"
             android:contentDescription="@string/amiibo_image"
             android:foreground="@drawable/card_foreground"
-            android:visibility="gone" />
+            android:src="@drawable/ic_outline_broken_image_24"/>
 
         <RelativeLayout
             android:layout_width="0dp"

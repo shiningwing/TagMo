@@ -349,15 +349,15 @@ class BrowserAmiibosAdapter extends RecyclerView.Adapter<BrowserAmiibosAdapter.A
         AmiiboFile amiiboFile = null;
 
         SimpleTarget<Bitmap> target = new SimpleTarget<Bitmap>() {
-            @Override
-            public void onLoadStarted(@Nullable Drawable placeholder) {
-                imageAmiibo.setVisibility(View.GONE);
-            }
-
-            @Override
-            public void onLoadFailed(@Nullable Drawable errorDrawable) {
-                imageAmiibo.setVisibility(View.GONE);
-            }
+            //@Override
+            //public void onLoadStarted(@Nullable Drawable placeholder) {
+            //    imageAmiibo.setVisibility(View.GONE);
+            //}
+//
+            //@Override
+            //public void onLoadFailed(@Nullable Drawable errorDrawable) {
+            //    imageAmiibo.setVisibility(View.GONE);
+            //}
 
             @Override
             public void onResourceReady(Bitmap resource, Transition transition) {
@@ -452,7 +452,7 @@ class BrowserAmiibosAdapter extends RecyclerView.Adapter<BrowserAmiibosAdapter.A
             this.txtPath.setVisibility(View.VISIBLE);
 
             if (this.imageAmiibo != null) {
-                this.imageAmiibo.setVisibility(View.GONE);
+                //this.imageAmiibo.setVisibility(View.GONE);
                 Glide.with(itemView).clear(target);
                 if (amiiboImageUrl != null) {
                     Glide.with(itemView)

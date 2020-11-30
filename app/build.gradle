@@ -7,7 +7,7 @@ android {
     defaultConfig {
         applicationId 'com.shiningwing.tagmo'
         minSdkVersion 21
-        targetSdkVersion 26
+        targetSdkVersion 29
         versionCode 7
         versionName '2.8.0'
     }

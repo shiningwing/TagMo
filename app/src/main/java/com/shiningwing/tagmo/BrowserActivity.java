@@ -156,7 +156,7 @@ public class BrowserActivity extends AppCompatActivity implements
     void afterViews() {
         this.bottomSheetBehavior = BottomSheetBehavior.from(bottomSheet);
         this.bottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
-        this.bottomSheetBehavior.setBottomSheetCallback(new BottomSheetBehavior.BottomSheetCallback() {
+        this.bottomSheetBehavior.addBottomSheetCallback(new BottomSheetBehavior.BottomSheetCallback() {
             @Override
             public void onStateChanged(@NonNull View bottomSheet, int newState) {
                 if (newState == BottomSheetBehavior.STATE_COLLAPSED) {

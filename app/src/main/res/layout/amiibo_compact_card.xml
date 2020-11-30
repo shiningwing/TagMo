@@ -4,11 +4,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="8dp"
-    android:layout_marginLeft="16dp"
-    android:layout_marginRight="16dp"
-    android:layout_marginTop="8dp"
-    android:clickable="true"
     android:foreground="@drawable/card_foreground"
     app:cardCornerRadius="@dimen/card_radius">
 
@@ -16,23 +11,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="8dp">
+        android:paddingStart="8dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="@dimen/activity_horizontal_margin"
+        android:paddingBottom="12dp">
 
         <ImageView
             android:id="@+id/imageAmiibo"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="56dp"
+            android:layout_height="64dp"
             android:layout_gravity="center_vertical"
-            android:layout_marginRight="8dp"
             android:contentDescription="@string/amiibo_image"
             android:foreground="@drawable/card_foreground"
-            android:visibility="gone" />
+            android:src="@drawable/ic_outline_broken_image_24"/>
 
         <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp">
 
             <TextView
                 android:id="@+id/txtName"
@@ -57,7 +55,7 @@
                     android:gravity="start"
                     android:text="TAGID"
                     android:textColor="?attr/colorOnSurface"
-                    android:textSize="10sp"/>
+                    android:textSize="12sp"/>
 
                 <View
                     android:layout_width="4dp"
@@ -71,7 +69,7 @@
                     android:gravity="end"
                     android:text="AMIIBO TYPE"
                     android:textColor="?attr/colorOnSurface"
-                    android:textSize="10sp"/>
+                    android:textSize="12sp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -89,7 +87,7 @@
                     android:gravity="start"
                     android:text="GAME SERIES"
                     android:textColor="?attr/colorOnSurface"
-                    android:textSize="10sp"/>
+                    android:textSize="12sp"/>
 
                 <View
                     android:layout_width="4dp"
@@ -103,7 +101,7 @@
                     android:gravity="end"
                     android:text="AMIIBO SERIES"
                     android:textColor="?attr/colorOnSurface"
-                    android:textSize="10sp"/>
+                    android:textSize="12sp"/>
             </LinearLayout>
 
             <TextView
@@ -112,8 +110,9 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/group2"
                 android:text="PATH"
-                android:textSize="10sp"
+                android:textSize="12sp"
                 android:visibility="gone"/>
+
         </RelativeLayout>
     </LinearLayout>
 
@@ -124,6 +123,7 @@
         android:gravity="end"
         android:text="CHARACTER"
         android:textColor="?attr/colorOnSurface"
-        android:textSize="10sp"
+        android:textSize="12sp"
         android:visibility="gone"/>
+
 </androidx.cardview.widget.CardView>

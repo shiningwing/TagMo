@@ -1,13 +1,13 @@
 <resources>
     <string name="app_name">TagMo</string>
     <string name="middleCenterError"> </string>
-    <string name="topCenterTextMessage">Place the Tag under the Phone</string>
+    <string name="topCenterTextMessage">Place the tag under the phone</string>
     <string name="nfcIconDescription">NFC icon</string>
     <string name="movingBarDescription">Moving bar indicating the scanning process</string>
     <string name="shadow_cave_progress">Shadow Cave progress</string>
     <string name="hearts">Hearts</string>
     <string name="edit_tp_data">Edit TP Data</string>
-    <string name="editor_error_outofbounds">Amiibo contains an invalid current state.</string>
+    <string name="editor_error_outofbounds">amiibo contains an invalid current state.</string>
     <string name="fixed_key_found">Locked key OK.</string>
     <string name="fixed_key_missing">No locked key!</string>
     <string name="unfixed_key_found">Unfixed key OK.</string>
@@ -36,7 +36,7 @@
     <string name="edit_mii_data">Edit Mii data</string>
     <string name="image_network_settings">\@string/image_network_settings</string>
     <string name="no_amiibos_found">No amiibos found</string>
-    <string name="no_amiibos_found_subtitle">Please navigate to a folder with amiibo .bins in it.</string>
+    <string name="no_amiibos_found_subtitle">Please navigate to a folder with amiibo .bin files in it.</string>
     <string name="toggle_file_browser">Toggle file browser</string>
     <string name="folder_parent">Parent</string>
     <string name="icon_up_arrow">Up arrow</string>
@@ -153,7 +153,7 @@
     <string name="blank_tag">Blank tag</string>
     <string name="id_tag">"ID: "</string>
     <string name="text_unknown">Unknown</string>
-    <string name="message_barcode_scanner_not_installed">Barcode Scanner is required to use QR Codes. Would you like to install it from the Play Store?</string>
+    <string name="message_barcode_scanner_not_installed">Barcode Scanner is required to use QR codes. Would you like to install it from the Play Store?</string>
     <string name="loaded_tag_file">Loaded tag file.</string>
     <string name="load_encrypted_tag">Load encrypted tag file for writing</string>
 </resources>

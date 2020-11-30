@@ -36,7 +36,7 @@
                 android:layout_height="match_parent"
                 android:clipToPadding="false"
                 android:paddingTop="@dimen/activity_vertical_margin"
-                android:paddingBottom="64dp"
+                android:paddingBottom="56dp"
                 android:scrollbars="vertical"/>
         </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
     </RelativeLayout>
@@ -55,10 +55,10 @@
         android:layout_height="match_parent"
         android:background="#A9333333"
         android:clickable="true"
+        android:focusable="true"
         android:orientation="vertical"
         app:behavior_peekHeight="48dp"
-        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
-        android:focusable="true">
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
 
         <LinearLayout
             android:layout_width="match_parent"
